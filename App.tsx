@@ -222,7 +222,11 @@ export default function App() {
           )}
 
           {currentView === 'TRANSACTIONS' && (
-            <TransactionList transactions={transactions} onDelete={deleteTransaction} />
+            <TransactionList 
+              transactions={transactions} 
+              onDelete={deleteTransaction} 
+              showFilters={true}
+            />
           )}
 
           {currentView === 'LOGS' && (
